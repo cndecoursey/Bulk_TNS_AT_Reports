@@ -1,0 +1,220 @@
+{
+  "at_report": {
+    "0": {
+      "ra": {
+        "value": "00:01:31.68"
+      },
+      "dec": {
+        "value": "-00:16:58.80"
+      },
+      "reporting_groupid": "133",
+      "data_source_groupid": "155",
+      "reporter": "[your name] on behalf of [your collaboration]",
+      "discovery_datetime": "2023-01-01",
+      "at_type": "1",
+      "host_name": "Host-galaxy-name-1",
+      "host_redshift": "3.37",
+      "internal_name": "Internal-Name1",
+      "remarks": "Test Remark",
+      "non_detection": {
+        "archiveid": "0",
+        "archival_remarks": "Archival remark 1"
+      },
+      "photometry": {
+        "0": {
+          "obsdate": "2023-01-01",
+          "flux": "29.51",
+          "flux_error": "0.43",
+          "flux_unitid": "1",
+          "filterid": "0",
+          "instrumentid": "185",
+          "comments": "Photometry comment 1. Filter is NIRCam-F090W. "
+        },
+        "1": {
+          "obsdate": "2023-01-01",
+          "flux": "27.95",
+          "flux_error": "0.07",
+          "flux_unitid": "1",
+          "filterid": "105",
+          "instrumentid": "185"
+        }
+      }
+    },
+    "1": {
+      "ra": {
+        "value": "23:00:00.00"
+      },
+      "dec": {
+        "value": "+01:23:02.40"
+      },
+      "reporting_groupid": "155",
+      "data_source_groupid": "133",
+      "reporter": "[your name] on behalf of [your collaboration]",
+      "discovery_datetime": "2022-12-03",
+      "at_type": "2",
+      "host_name": "Host-galaxy-name-2",
+      "host_redshift": "3.237",
+      "internal_name": "Internal-Name2",
+      "non_detection": {
+        "archiveid": "0",
+        "archival_remarks": "Archival remark 2"
+      },
+      "photometry": {
+        "0": {
+          "obsdate": "2022-12-03",
+          "flux": "28.3",
+          "flux_error": "0.12",
+          "flux_unitid": "1",
+          "filterid": "102",
+          "instrumentid": "185",
+          "comments": "Photometry comment 2. "
+        },
+        "1": {
+          "obsdate": "2022-12-03",
+          "flux": "28.66",
+          "flux_error": "0.23",
+          "flux_unitid": "1",
+          "filterid": "0",
+          "instrumentid": "185",
+          "comments": "Filter is NIRCam-F090W. "
+        }
+      }
+    },
+    "2": {
+      "ra": {
+        "value": "18:17:16.80"
+      },
+      "dec": {
+        "value": "-27:00:00.00"
+      },
+      "reporting_groupid": "133",
+      "data_source_groupid": "155",
+      "reporter": "[your name] on behalf of [your collaboration]",
+      "discovery_datetime": "2025-04-14",
+      "at_type": "3",
+      "remarks": "Test Remark",
+      "non_detection": {
+        "obsdate": "2024-04-14",
+        "flux_unitid": "1",
+        "filterid": "150",
+        "instrumentid": "194"
+      },
+      "photometry": {
+        "0": {
+          "obsdate": "2025-04-14",
+          "flux": "28.59",
+          "flux_error": "0.08",
+          "flux_unitid": "1",
+          "filterid": "0",
+          "instrumentid": "185",
+          "comments": "Filter is NIRCam-F090W. "
+        },
+        "1": {
+          "obsdate": "2025-04-14",
+          "flux": "28.66",
+          "flux_error": "0.12",
+          "flux_unitid": "1",
+          "filterid": "102",
+          "instrumentid": "185"
+        },
+        "2": {
+          "obsdate": "2025-04-14",
+          "flux": "28.59",
+          "flux_error": "0.08",
+          "flux_unitid": "1",
+          "filterid": "105",
+          "instrumentid": "185"
+        }
+      }
+    },
+    "3": {
+      "ra": {
+        "value": "12:36:30.49"
+      },
+      "dec": {
+        "value": "-54:23:38.40"
+      },
+      "reporting_groupid": "155",
+      "data_source_groupid": "155",
+      "reporter": "[your name] on behalf of [your collaboration]",
+      "discovery_datetime": "2021-03-23",
+      "at_type": "1",
+      "host_name": "Host-galaxy-name-4",
+      "host_redshift": "2.492",
+      "internal_name": "Internal-Name4",
+      "non_detection": {
+        "obsdate": "2022-03-23",
+        "flux_unitid": "1",
+        "filterid": "150",
+        "instrumentid": "194"
+      },
+      "photometry": {
+        "0": {
+          "obsdate": "2021-03-23",
+          "flux": "27.5",
+          "flux_error": "0.08",
+          "flux_unitid": "1",
+          "filterid": "105",
+          "instrumentid": "185",
+          "comments": "Photometry comment 4. "
+        },
+        "1": {
+          "obsdate": "2021-03-23",
+          "flux": "28.36",
+          "flux_error": "0.22",
+          "flux_unitid": "1",
+          "filterid": "0",
+          "instrumentid": "185",
+          "comments": "Filter is NIRCam-F090W. "
+        }
+      }
+    },
+    "4": {
+      "ra": {
+        "value": "00:21:10.01"
+      },
+      "dec": {
+        "value": "+89:22:51.60"
+      },
+      "reporting_groupid": "133",
+      "data_source_groupid": "133",
+      "reporter": "[your name] on behalf of [your collaboration]",
+      "discovery_datetime": "2022-11-30",
+      "at_type": "1",
+      "host_name": "Host-galaxy-name-5",
+      "host_redshift": "0.437",
+      "internal_name": "Internal-Name5",
+      "non_detection": {
+        "archiveid": "0",
+        "archival_remarks": "Archival remark 5"
+      },
+      "photometry": {
+        "0": {
+          "obsdate": "2022-11-30",
+          "flux": "27.62",
+          "flux_error": "0.06",
+          "flux_unitid": "1",
+          "filterid": "102",
+          "instrumentid": "185"
+        },
+        "1": {
+          "obsdate": "2022-11-30",
+          "flux": "28.08",
+          "flux_error": "0.18",
+          "flux_unitid": "1",
+          "filterid": "0",
+          "instrumentid": "185",
+          "comments": "Filter is NIRCam-F090W. "
+        },
+        "2": {
+          "obsdate": "2022-11-30",
+          "flux": "27.89",
+          "flux_error": "0.1",
+          "flux_unitid": "1",
+          "filterid": "105",
+          "instrumentid": "185"
+        }
+      }
+    }
+  }
+}
