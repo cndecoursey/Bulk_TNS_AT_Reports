@@ -76,23 +76,30 @@ with open('%s' % save_name, 'w') as file:
 		# Source Number
 		file.write('    "' + str(i)+ '": {\n')
 
+		# If you want to manually convert degree units to sexagesimal units (but this is neither necessary nor recommended for posting)
 		# RA/Dec --> Needs specific formatting like ('02:23:49.531 +10:14:10.340')
-		c_deg = SkyCoord(ra=tab['RA'][i]*u.degree, dec=tab['Dec'][i]*u.degree)
-		ra_hms, dec_dms = c_deg.ra.hms, c_deg.dec.dms
+		#c_deg = SkyCoord(ra=tab['RA'][i]*u.degree, dec=tab['Dec'][i]*u.degree)
+		#ra_hms, dec_dms = c_deg.ra.hms, c_deg.dec.dms
 
 		# Need to ensure that there's a '0' preceding any value <10 in hours, minutes, or seconds; add '+' if dec is positive and '-' if dec is negative
-		ra = f"{ra_hms[0]:02.0f}" + ':' + f"{ra_hms[1]:02.0f}" + ':' + f"{ra_hms[2]:05.2f}"
-		dec = f"{abs(dec_dms[0]):02.0f}" + ':' + f"{abs(dec_dms[1]):02.0f}" + ':' + f"{abs(dec_dms[2]):05.2f}"		
-		if(tab['Dec'][i] > 0):
-			dec = '+' + dec
-		else:
-			dec = '-' + dec
+		#ra = f"{ra_hms[0]:02.0f}" + ':' + f"{ra_hms[1]:02.0f}" + ':' + f"{ra_hms[2]:05.3f}"
+		#dec = f"{abs(dec_dms[0]):02.0f}" + ':' + f"{abs(dec_dms[1]):02.0f}" + ':' + f"{abs(dec_dms[2]):05.2f}"		
+		#if(tab['Dec'][i] > 0):
+		#	dec = '+' + dec
+		#else:
+		#	dec = '-' + dec
+
+		# Position in degrees --> the 'unit' of '29' corresponds to degrees
+		ra = tab['RA'][i]
+		dec = tab['Dec'][i]
 
 		file.write('      "ra": {\n')
-		file.write('        "value": "' + str(ra) + '"\n')
+		file.write('        "value": "' + str(ra) + '",\n')
+		file.write('        "units": "29"\n')
 		file.write('      },\n')
 		file.write('      "dec": {\n')
-		file.write('        "value": "' + str(dec) + '"\n')
+		file.write('        "value": "' + str(dec) + '",\n')
+		file.write('        "units": "29"\n')
 		file.write('      },\n')
 
 # ----------------------------------------------------------------------------------------------------------------------------------------------------------
